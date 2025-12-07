@@ -21,7 +21,7 @@ export const Navbar: React.FC = () => {
             className="flex-shrink-0 cursor-pointer select-none" 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <span className="font-sifonn text-5xl text-brand-purple tracking-wide">
+            <span className="font-sifonn text-4xl text-brand-purple tracking-wide">
               EZINIX
             </span>
           </div>
