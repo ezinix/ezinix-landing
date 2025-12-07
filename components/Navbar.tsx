@@ -16,11 +16,22 @@ export const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo - Text Only */}
+          {/* Logo - Image */}
           <div className="flex-shrink-0 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <span className="text-3xl font-bold tracking-widest text-white hover:text-brand-purple transition-colors">
-              EZINIX
-            </span>
+            {/* 
+              IMPORTANT: Upload 'logo.png' to your 'public' folder on GitHub.
+              The height (h-10) controls the logo size. Adjust if needed (e.g., h-12, h-14).
+            */}
+            <img 
+              src="/logo.png" 
+              alt="EZINIX" 
+              className="h-10 md:h-12 w-auto object-contain"
+              onError={(e) => {
+                // Fallback to text if image fails to load
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement!.innerText = 'EZINIX';
+              }}
+            />
           </div>
 
           {/* Desktop Menu */}
