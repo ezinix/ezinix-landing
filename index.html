@@ -6,7 +6,8 @@
     <title>EZINIX | Renewed. Reliable. Ready.</title>
     <meta name="description" content="India’s trusted B2B platform for bulk supply of premium refurbished laptops. Wholesale only." />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <!-- Tailwind CSS (CDN is used here for simplicity without extra config files) -->
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -23,12 +24,26 @@
             },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
+              // Register the custom font here
+              sifonn: ['Sifonn', 'sans-serif'],
             }
           }
         }
       }
     </script>
     <style>
+      /* Define the Custom Font */
+      @font-face {
+        font-family: 'Sifonn';
+        /* Tries to find .otf first, then .ttf. 
+           Ensure your file in 'public' is named 'Sifonn.otf' or 'Sifonn.ttf' */
+        src: url('/Sifonn.otf') format('opentype'),
+             url('/Sifonn.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
       body {
         background-color: #131524;
         color: #e2e8f0;
@@ -50,14 +65,14 @@
         background: #5b29b9;
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "react": "https://aistudiocdn.com/react@^19.2.1",
-    "vite": "https://aistudiocdn.com/vite@^7.2.6",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
     "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
