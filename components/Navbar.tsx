@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo - Text with Custom Sifonn Font */}
           <div 
-            className="flex-shrink-0 cursor-pointer select-none mt-2" 
+            className="flex-shrink-0 cursor-pointer select-none mt-3" 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             <span className="font-sifonn text-4xl text-brand-purple tracking-wide">
