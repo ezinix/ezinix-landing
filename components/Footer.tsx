@@ -8,7 +8,8 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h2 className="text-2xl font-bold text-white mb-2">EZINIX</h2>
+            {/* Custom Sifonn Font applied here */}
+            <h2 className="font-sifonn text-4xl text-brand-purple mb-2 tracking-wide">EZINIX</h2>
             <p className="text-sm text-gray-500">32-Point Tested • Business-Grade Quality</p>
           </div>
 
