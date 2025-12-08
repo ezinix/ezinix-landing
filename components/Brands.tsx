@@ -3,13 +3,13 @@ import React from 'react';
 export const Brands: React.FC = () => {
   // Using styled text since we don't have SVGs for all brands and want to keep it consistent without external images
   const brands = [
-    { name: "DELL", style: "font-serif font-bold" },
-    { name: "HP", style: "font-sans font-bold italic" },
-    { name: "Lenovo", style: "font-sans font-bold tracking-wider" },
-    { name: "ASUS", style: "font-sans font-bold tracking-widest" },
-    { name: "acer", style: "font-sans font-bold tracking-tighter" },
-    { name: "Apple", style: "font-sans font-medium" },
-    { name: "Redmi", style: "font-mono font-bold" }
+    { name: "DELL", style: "font-sans font-bold tracking-wider" },
+    { name: "HP", style: "font-sans font-bold tracking-wider" },
+    { name: "LENOVO", style: "font-sans font-bold tracking-wider" },
+    { name: "ASUS", style: "font-sans font-bold tracking-wider" },
+    { name: "ACER", style: "font-sans font-bold tracking-wider" },
+    { name: "APPLE", style: "font-sans font-bold tracking-wider" },
+    { name: "REDMI", style: "font-sans font-bold tracking-wider" }
   ];
 
   return (
