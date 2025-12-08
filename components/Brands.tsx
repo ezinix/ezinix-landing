@@ -1,15 +1,8 @@
 import React from 'react';
 
 export const Brands: React.FC = () => {
-  // Using styled text since we don't have SVGs for all brands and want to keep it consistent without external images
   const brands = [
-    { name: "DELL", style: "font-sans font-bold tracking-wider" },
-    { name: "HP", style: "font-sans font-bold tracking-wider" },
-    { name: "LENOVO", style: "font-sans font-bold tracking-wider" },
-    { name: "ASUS", style: "font-sans font-bold tracking-wider" },
-    { name: "ACER", style: "font-sans font-bold tracking-wider" },
-    { name: "APPLE", style: "font-sans font-bold tracking-wider" },
-    { name: "REDMI", style: "font-sans font-bold tracking-wider" }
+    "Dell", "HP", "Lenovo", "Asus", "Acer", "Apple", "Redmi"
   ];
 
   return (
@@ -20,8 +13,8 @@ export const Brands: React.FC = () => {
         </p>
         <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70">
           {brands.map((brand, idx) => (
-            <div key={idx} className="text-3xl md:text-4xl text-gray-400 hover:text-white transition-colors cursor-default select-none">
-              <span className={brand.style}>{brand.name}</span>
+            <div key={idx} className="text-3xl md:text-4xl font-sans font-bold tracking-wider text-gray-400 hover:text-white transition-colors cursor-default select-none">
+              {brand}
             </div>
           ))}
         </div>
